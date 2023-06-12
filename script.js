@@ -25,21 +25,21 @@ const flip = () => {
                tail++;
       }
     console.log(random_event);
-    updateStats();
+    
 }
-function updateStats(){
-  document.querySelector("#heads-count").textContent = `Heads: ${head}`;
-  document.querySelector("#tails-count").textContent = `Tails: ${tail}`;
-}
+// function updateStats(){
+//   document.querySelector("#heads-count").textContent = `Heads: ${head}`;
+//   document.querySelector("#tails-count").textContent = `Tails: ${tail}`;
+// }
 
 //btn logic
 btn.addEventListener("click",flip);
 //reset btn 
 reset.addEventListener("click",() => {
     coin.style.animation = "";
-    head = 0;
-    tail =0 ;
-    updateStats();
+//     head = 0;
+//     tail =0 ;
+//     updateStats();
 
 })
 
